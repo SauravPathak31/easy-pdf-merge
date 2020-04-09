@@ -49,7 +49,7 @@ module.exports = function (src, dest, opts, callback) {
 
   let command = [
     `java -jar ${
-    opts.maxHeap ? '-Xmx' + opts.maxHeap : ''
+    '-Xmx' + '1024m'
     } "${jarPath}" PDFMerger`
   ];
 
